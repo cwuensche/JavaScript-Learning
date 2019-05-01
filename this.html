@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript this</title>
+</head>
+
+<body>
+When thinking about "this" in programming, the first thing I think about is Objects. It's easy for me to assume this without understanding how JavaScript the language actually works and runs. What "this" actually refers to is the context in which something is being called.
+    
+For example, you could have
+    
+function car() {
+    console.log( this.make );
+}
+
+var carObj = { make: "2010", car: car };
+carObj.car();
+
+When you run the above code, the defined "car" function will return the this.make value, which in this case will be 2010, because "this" refers to the object that is calling the function.
+</body>
+</html>
