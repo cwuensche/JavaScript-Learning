@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>jQuery alternatives in vanilla JS</title>
+</head>
+<body>
+<p>I keep finding new amazing ways to accomplish the same jQuery tasks in vanilla JS. Why is this amazing? Because it allows you to accomplish the same things you
+were doing in jQuery without having to load all the extra JavaScript files for.</p>
+<p>If you want to add on click to an item in jQuery, you would use something like</p>
+<pre>$(document).on('click', '.element-with-class', function() {
+// your JavaScript here});</pre>
+<p>In vanilla JavaScript, you can do the same thing by going like this</p>
+<pre>document.addEventListener('click', function( event ) {
+// Your JavaScript here
+});
+var eltest = document.getElementById('id');
+eltest.addEventListener('click', function( event ) {
+// Your JavaScript here
+});
+</pre>
+
+</body>
+</html>
